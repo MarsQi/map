@@ -1,0 +1,272 @@
+/* 图文详情 */
+.jp-teletext {
+  position: relative;
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ededed;
+  /*详情*/
+}
+.jp-teletext .title {
+  position: relative;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: #080606;
+  background-color: #fff;
+  text-align: center;
+}
+.jp-teletext .title a {
+  position: absolute;
+  left: 0.4rem;
+  top: 0;
+  display: block;
+  height: 1rem;
+  cursor: pointer;
+  color: #666;
+}
+.jp-teletext .title span {
+  font-size: 0.4rem;
+}
+.jp-teletext .tips {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0 0.4rem;
+  border-top: 1px solid #e4e2e2;
+  border-bottom: 1px solid #e4e2e2;
+  background: #fff;
+  /*图文切换*/
+  /*维度选择对象*/
+}
+.jp-teletext .tips .tips-choose {
+  float: left;
+  width: 50%;
+  height: 1rem;
+  line-height: 1rem;
+}
+.jp-teletext .tips .tips-choose span {
+  display: block;
+  float: left;
+  font-size: 0.28rem;
+  height: 100%;
+  margin-right: 0.34rem;
+  cursor: pointer;
+}
+.jp-teletext .tips .chooseActive {
+  color: #3399db;
+  border-bottom: 2px solid #3399db;
+}
+.jp-teletext .tips .tips-object {
+  float: left;
+  padding-right: 0.4rem;
+  width: 50%;
+  height: 1rem;
+  line-height: 1rem;
+}
+.jp-teletext .tips .tips-object div {
+  position: relative;
+  float: right;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: right;
+}
+.jp-teletext .tips .tips-object div i {
+  display: block;
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.36rem;
+  color: #3399db;
+  cursor: pointer;
+}
+.jp-teletext .tips .tips-object div select {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9990;
+  width: 50%;
+  height: 100%;
+  border: 0;
+  color: none;
+  background: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #fff;
+  opacity: 0;
+}
+.jp-teletext .tips .tips-object div select option {
+  font-size: 0.3rem;
+}
+.jp-teletext .tips .tips-object div select option.valueSel {
+  font-size: 26px;
+  color: #0190d4;
+}
+.jp-teletext .tipsIndex {
+  z-index: 1001;
+}
+.jp-teletext .details {
+  position: relative;
+  width: 7.5rem;
+  height: calc(100%-17rem);
+  /*图文基本内容*/
+  /*数据echart图*/
+}
+.jp-teletext .details .details-con {
+  width: 100%;
+  height: auto;
+  padding: 0 0.3rem;
+  padding-bottom: 24px;
+}
+.jp-teletext .details .details-con .detals-tips {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  overflow: hidden;
+}
+.jp-teletext .details .details-con .detals-tips .city-icon,
+.jp-teletext .details .details-con .detals-tips .city-collect {
+  float: left;
+  width: 10%;
+  height: 1rem;
+  line-height: 1rem;
+}
+.jp-teletext .details .details-con .detals-tips .city-icon img,
+.jp-teletext .details .details-con .detals-tips .city-collect img {
+  display: inline-block;
+  height: 0.5rem;
+  margin-top: 0.25rem;
+}
+.jp-teletext .details .details-con .detals-tips .city-jingwei {
+  float: left;
+  width: 80%;
+  height: 1rem;
+  line-height: 1rem;
+  color: #999;
+}
+.jp-teletext .details .details-con .detals-tips .city-jingwei span {
+  font-size: 0.34rem;
+}
+.jp-teletext .details .details-con .detals-tips .city-collect {
+  text-align: right;
+  cursor: pointer;
+}
+.jp-teletext .details .details-con .details-content {
+  width: 100%;
+  padding: 0 0.2rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.1rem;
+  background: #fff;
+}
+.jp-teletext .details .details-con .details-content .city {
+  width: 100%;
+}
+.jp-teletext .details .details-con .details-content .city .city-title {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.jp-teletext .details .details-con .details-content .city .city-title .city-name {
+  color: #03b2e0;
+  font-size: 0.36rem;
+}
+.jp-teletext .details .details-con .details-content .city .city-img {
+  position: relative;
+  width: 100%;
+}
+.jp-teletext .details .details-con .details-content .city .city-img #city-img {
+  display: block;
+  width: 100%;
+  height: 3.6rem;
+}
+.jp-teletext .details .details-con .details-content .measurements {
+  width: 100%;
+  height: auto;
+}
+.jp-teletext .details .details-con .details-content .measurements li {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-bottom: 1px solid #b5b5b5;
+}
+.jp-teletext .details .details-con .details-content .measurements li span {
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 0.3rem;
+  color: #666;
+}
+.jp-teletext .details .details-con .details-content .measurements li .measured-value {
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.jp-teletext .details .details-con .details-content .measurements li.valueSel span {
+  color: #0190d4;
+}
+.jp-teletext .details .details-con .details-content .measurements li:last-child {
+  border: none;
+}
+.jp-teletext .details .details-con .online-state {
+  width: 100%;
+  height: 2.2rem;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 0.1rem;
+}
+.jp-teletext .details .details-con .online-state div {
+  height: 0.66rem;
+  line-height: 0.66rem;
+  border-bottom: 1px solid #b5b5b5;
+  color: #666666;
+  font-size: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.jp-teletext .details .details-con .online-state .content-status {
+  height: 0.88rem;
+  line-height: 0.88rem;
+}
+.jp-teletext .details .details-con .online-state .content-status span {
+  display: inline-block;
+  width: 1.1rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+.jp-teletext .details .details-con .online-state .setanniu {
+  background: #3886c8;
+  color: white !important;
+}
+.jp-teletext .details .details-con .online-state div:last-child {
+  border: none;
+}
+.jp-teletext .details .details-echarts {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.jp-teletext .details .details-echarts #myChart {
+  height: 100%;
+}
+.jp-teletext .details .details-echarts .waiting {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 16px;
+  color: #666;
+}
+.jp-teletext .details .zIndex {
+  /*z-index: 1000;*/
+  left: 100%;
+}
+.jp-teletext .details .hide {
+  display: none;
+}

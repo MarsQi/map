@@ -1,0 +1,95 @@
+.amap-icon img {
+    width: 110%;
+}
+
+.amap-info-content{
+	 background-image: url(../img/map/bjs.png);
+}
+.hq-card{
+	background-position: center center;
+   	background-repeat: no-repeat;
+   	width: 3rem;
+   	padding: 0.05rem 0.1rem 0.15rem 0.1rem;  
+}
+.hq-card h3{
+	 padding-top: .16rem;
+	 text-align: center;
+   	 padding-bottom: .04rem;
+     font-size: .26rem;
+     color: #fff;
+     word-break: keep-all;
+     overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.hq-card h4{
+	color: #fff;
+    font-weight: normal;
+    font-size: .12rem;
+    text-align: center;
+    padding-bottom: 4px;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;    
+}
+.air_con1 li{
+	height: .40rem;
+	text-align: center;
+	border-top: 1px solid rgba(204,204,204,0.34);
+	line-height: .41rem;
+	color: #fff;
+    font-size: .14rem;
+    display: flex;
+    justify-content: center; 
+}
+.air_con1 li .left{
+	width: 40%;
+	text-align: center;
+	line-height: .41rem;
+}
+.air_con1 li .right{
+	width: 48%;
+	text-align: center;
+	line-height: .41rem;
+}
+.air_con1 li .center{
+	line-height: .41rem;	
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}
+
+
+.air_con2 li{
+	height: .40rem;
+	text-align: center;
+	border-top: 1px solid rgba(204,204,204,0.34);
+	line-height: .41rem;
+	color: #fff;
+    font-size: .14rem; 
+    display: flex;
+    justify-content: center; 
+    
+}
+.air_con2 li .left{
+	width: 40%;
+	text-align: center;
+	line-height: .41rem;
+	/*overflow: hidden;*/
+	white-space: nowrap;
+	/*text-overflow: ellipsis;*/
+}
+.air_con2 li .right{
+	width: 48%;
+	text-align: center;
+	line-height: .41rem;	
+	/*overflow: hidden;*/
+	white-space: nowrap;
+	/*text-overflow: ellipsis;*/ 
+}
+.air_con2 li .center{
+	line-height: .41rem;	
+	/*overflow: hidden;*/
+	white-space: nowrap;
+	/*text-overflow: ellipsis;*/ 
+}

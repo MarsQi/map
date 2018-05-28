@@ -1,0 +1,274 @@
+/* 图文详情 */
+
+.jp-teletext {
+  position: relative;
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ededed;
+  .title {
+    position: relative;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: rgb(8, 6, 6);
+    background-color: #fff;
+    text-align: center;
+    a {
+      position: absolute;
+      left: 0.4rem;
+      top: 0;
+      display: block;
+      height: 1rem;
+      cursor: pointer;
+      color: #666;
+    }
+    span {
+      font-size: 0.4rem;
+    }
+  }
+  .tips {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 0.4rem;
+    border-top: 1px solid #e4e2e2;
+    border-bottom: 1px solid #e4e2e2;
+    background: #fff;
+    /*图文切换*/
+    .tips-choose {
+      float: left;
+      width: 50%;
+      height: 1rem;
+      line-height: 1rem;
+      span {
+        display: block;
+        float: left;
+        font-size: 0.28rem;
+        height: 100%;
+        margin-right: 0.34rem;
+        cursor: pointer;
+      }
+    }
+    .chooseActive {
+      color: #3399db;
+      border-bottom: 2px solid #3399db;
+    }
+    /*维度选择对象*/
+    .tips-object {
+      float: left;
+      padding-right: 0.4rem;
+      width: 50%;
+      height: 1rem;
+      line-height: 1rem;
+      div {
+        position: relative;
+        float: right;
+        width: 1rem;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: right;
+        i {
+          display: block;
+          float: left;
+          width: 1rem;
+          height: 1rem;
+          font-size: 0.36rem;
+          color: #3399db;
+          cursor: pointer;
+        }
+        select {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 9990;
+          width: 50%;
+          height: 100%;
+          border: 0;
+          color: none;
+          background: 0;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background: #fff;
+          opacity: 0;
+          option {
+            font-size: 0.3rem;
+          }
+          option.valueSel {
+            font-size: 26px;
+            color: rgb(1, 144, 212);
+          }
+        }
+      }
+    }
+  }
+  .tipsIndex {
+    z-index: 1001;
+  }
+  /*详情*/
+  .details {
+    position: relative;
+    width: 7.5rem;
+    height: calc(~"100%-17rem");
+    /*图文基本内容*/
+    .details-con {
+      width: 100%;
+      height: auto;
+      padding: 0 0.3rem;
+      padding-bottom: 24px;
+      .detals-tips {
+        width: 100%;
+        height: 1rem;
+        line-height: 1rem;
+        overflow: hidden;
+        .city-icon,
+        .city-collect {
+          float: left;
+          width: 10%;
+          height: 1rem;
+          line-height: 1rem;
+          img {
+            display: inline-block;
+            height: 0.5rem;
+            margin-top: 0.25rem;
+          }
+        }
+        .city-jingwei {
+          float: left;
+          width: 80%;
+          height: 1rem;
+          line-height: 1rem;
+          color: #999;
+          span {
+            font-size: 0.34rem;
+          }
+        }
+        .city-collect {
+          text-align: right;
+          cursor: pointer;
+        }
+      }
+      .details-content {
+        width: 100%;
+        padding: 0 0.2rem;
+        margin-bottom: 0.3rem;
+        border-radius: 0.1rem;
+        background: #fff;
+        .city {
+          width: 100%;
+          .city-title {
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+            .city-name {
+              color: #03b2e0;
+              font-size: 0.36rem;
+            }
+          }
+          .city-img {
+            position: relative;
+            width: 100%;
+            #city-img {
+              display: block;
+              width: 100%;
+              height: 3.6rem;
+            }
+          }
+        }
+        .measurements {
+          width: 100%;
+          height: auto;
+          li {
+            height: 0.8rem;
+            line-height: 0.8rem;
+            border-bottom: 1px solid #b5b5b5;
+            span {
+              display: block;
+              float: left;
+              width: 50%;
+              font-size: 0.3rem;
+              color: #666;
+            }
+            .measured-value {
+              text-align: right;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          li.valueSel {
+            span {
+              color: rgb(1, 144, 212);
+            }
+          }
+          li:last-child {
+            border: none;
+          }
+        }
+      }
+      .online-state {
+        width: 100%;
+        height: 2.2rem;
+        padding: 0 20px;
+        background: #fff;
+        border-radius: 0.1rem;
+        div {
+          height: 0.66rem;
+          line-height: 0.66rem;
+          border-bottom: 1px solid #b5b5b5;
+          color: #666666;
+          font-size: 0.3rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .content-status {
+          height: 0.88rem;
+          line-height: 0.88rem;
+        }
+        .content-status span {
+          display: inline-block;
+          width: 1.1rem;
+          height: 0.5rem;
+          line-height: 0.5rem;
+          text-align: center;
+          border-radius: 0.1rem;
+        }
+        .setanniu {
+          background: #3886c8;
+          color: white !important;
+        }
+        div:last-child {
+          border: none;
+        }
+      }
+    }
+    /*数据echart图*/
+    .details-echarts {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      #myChart {
+        height: 100%;
+      }
+      .waiting {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 16px;
+        color: #666;
+      }
+    }
+    .zIndex {
+      /*z-index: 1000;*/
+      left: 100%;
+    }
+    .hide {
+      display: none;
+    }
+  }
+}
